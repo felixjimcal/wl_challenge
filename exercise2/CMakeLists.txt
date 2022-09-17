@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(exercise1 LANGUAGES CXX)
+project(exercise2 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -15,17 +15,17 @@ FetchContent_Declare(
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
-add_executable(exercise1 main.cpp)
+add_executable(exercise2 main.cpp)
 
 enable_testing()
 
 target_link_libraries(
-  exercise1
+  exercise2
   gtest_main
 )
 
-install(TARGETS exercise1
+install(TARGETS exercise2
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
 
 include(GoogleTest)
-gtest_discover_tests(exercise1)
+gtest_discover_tests(exercise2)
