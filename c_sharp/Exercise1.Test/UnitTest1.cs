@@ -1,6 +1,4 @@
 using exercise1;
-using Exercise1;
-using System.Runtime.CompilerServices;
 
 namespace Exercise1.Test
 {
